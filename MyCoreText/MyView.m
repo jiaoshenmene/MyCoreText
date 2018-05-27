@@ -55,7 +55,7 @@
     
     
     
-    CGRect r1 = CGRectMake(- rect1.origin.x , rect.origin.y, ceil(rect1.size.width) , rect.size.height);
+    CGRect r1 = CGRectMake(- ceilf(rect1.origin.x)   , rect.origin.y, rect1.size.width + ceilf(rect1.origin.x), rect.size.height);
     
     NSLog(@"%@",NSStringFromCGRect(rect));
     NSLog(@"%@",NSStringFromCGRect(r1));
